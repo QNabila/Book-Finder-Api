@@ -1,38 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Book Finder</title>
-    <!-- get boostrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-</head>
-<style>
-    .result{
-        text-align: center;;
-    }
-</style>
-<body>
-    <h2 class="text-center text-success">
-        Serach your favorite book
-    </h2>
-    <div class="input-group mb-3 mt-4 w-50 mx-auto">
-        <input id="search-field" type="text" class="form-control " placeholder="Search the food you want" aria-label="Recipient's username" aria-describedby="button-addon2">
-        <button onclick="searchBook()" class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+    <!-- link boostrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <!-- Link css -->
+    <link rel="stylesheet" href="book.css">
+  </head>
+ 
+  <body> 
+      <h2 class="text-center text-black-50 mt-5">Search Your Favourite Book</h2>
+      <div class="input-group mb-3 mt-4 w-50 mx-auto">
+        <input
+          id="search-field"
+          type="text"
+          class="form-control"
+          placeholder="Search the book you want"
+          aria-label="Recipient's username"
+          aria-describedby="button-addon2"
+        />
+        <button
+          onclick="searchBook()"
+          class="btn btn-outline-secondary"
+          type="button"
+          id="button-addon2"
+        >
+          Search
+        </button>
       </div>
       <!-- Total search results -->
-      <div id="total-results">
+      <div id="total-results"></div>
 
-      </div>
-      
       <!-- Book search results -->
       <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4">
-          <!-- here js will add dynamic html -->
+        <!-- here js will add dynamic html -->
+      </div>
+      <!-- alert for no input -->
+      <div id="alert" class="alert alert-danger w-25 mt-4 text-center mx-auto" role="alert">
+        Please enter a book name!
       </div>
 
-    <!-- bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <!-- bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
     <script src="book.js"></script>
-</body>
+  </body>
 </html>
