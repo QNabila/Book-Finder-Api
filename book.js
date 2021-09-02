@@ -8,6 +8,7 @@ const searchBook = () => {
   if (searchField.value == 0) {
     document.getElementById("alert").style.display = "block";
   } else {
+    document.getElementById("alert").style.display = "none";
     // clear serach field
     searchField.value = "";
 
@@ -52,7 +53,7 @@ const searchBook = () => {
 
         div.innerHTML = `<div class="col">
                 <div class="card h-75">
-                <img src="https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg"class="card-img-top" alt="...">
+                <img src="https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg"class="card-img-top" alt="">
                   <div class="card-body">
                     <h5 class="card-title">Book Title:${book.title}</h5>
                     <p class="card-text"><b></b>Author Name: ${book.author_name}</p>
