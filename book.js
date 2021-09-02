@@ -31,7 +31,6 @@ const searchBook = () => {
         resultDiv.innerHTML = `<h2 class="text-center">No results found </h2>`;
         totalResults.appendChild(resultDiv);
       }
-
       const searchResult = document.getElementById("search-result");
       // clear previous result
       searchResult.innerText = "";
