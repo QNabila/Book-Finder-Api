@@ -4,7 +4,7 @@ const searchField = document.getElementById('search-field');
 
 searchField.addEventListener("keypress", (event) => {
   // event.preventDefault();
-  if (event.keyCode == 13)
+  if (event.key === 'Enter')
     {
       searchBtn.click();
     }
