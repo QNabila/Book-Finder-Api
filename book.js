@@ -1,3 +1,15 @@
+// search with enter
+const searchBtn = document.getElementById('button-addon2');
+const searchField = document.getElementById('search-field');
+
+searchField.addEventListener("keypress", (event) => {
+  // event.preventDefault();
+  if (event.keyCode == 13)
+    {
+      searchBtn.click();
+    }
+})
+
 // alert for no input
 document.getElementById("alert").style.display = "none";
 // Get input
